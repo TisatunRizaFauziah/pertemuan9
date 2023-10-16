@@ -66,6 +66,7 @@ namespace pertemuan9
 
         private void btnOperator_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Berhasil");
             Button op = (Button)sender;
             if(oper1 == false)
             {
@@ -119,6 +120,15 @@ namespace pertemuan9
                 oper = ' ';
             }
             fokus();
+        }
+
+        private void btnkoma_Click(object sender, EventArgs e)
+        {
+            if(txtinput.Text.Contains(',')==false)
+            {
+                txtinput.Text = txtinput.Text + " , ";
+            }
+           
         }
     }
 }
